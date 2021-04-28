@@ -1,0 +1,26 @@
+Package: intGuideR
+Type: Package
+Title: Fetch on- and off-target of sgRNA from sequencing data
+Version: 0.1.0
+Author: Cai Haodong
+Maintainer: Cai Haodong <56673645@qq.com>
+Description: Fetch on- and off-target from raw fastq files.
+    This package integrated mergeReads, trimReads, alignBowtie2,
+    sam2bam, bam2bed and guideBed, is used for a complete processing
+    from raw fastq to sgRNA targets. Alternatively, you can also
+    analysis your data step by step,in such mode you can tune
+    lots of parameters to achieve better performance.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    ShortRead, 
+    dplyr, 
+    data.table, 
+    Biostrings, 
+    motifRG, 
+    BSgenome.Hsapiens.UCSC.hg38, 
+    GenomicRanges, 
+    BiocGenerics,
+    IRanges
+RoxygenNote: 7.1.1
